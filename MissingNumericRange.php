@@ -1,4 +1,10 @@
 <?php
+# Name: MissingNumericRange.php
+# Author: NahuenL
+# Web: https://github.com/NahuenL
+# Update: 2020-08-03
+# Version: 1.0.0
+# Copyright 2020 NahuenL
 
 function MissingNumericRange($actual_ranges, $min_range, $max_range)
 {
