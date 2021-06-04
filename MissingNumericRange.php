@@ -28,14 +28,13 @@ function MissingNumericRange($actual_ranges, $min_range, $max_range)
                 $ext = true;
                 if ($range["max"] < $max_range) {
                     array_push($array_return, array("id" => 0, "min" => ($range["max"] + 1), "max" => $max_range));
-                    //$primer_maximo = $maximo;
                 }
 
 
                 $first_max = $first_max + 1;
                 if ($first_max >= $range["min"]) {
                     $first_max = $range["max"];
-                } else {//no existe rango
+                } else {
                     array_push($array_return, array("id" => 0, "min" => $first_max, "max" => ($range["min"] - 1)));
                     $first_max = $range["max"];
                 }
